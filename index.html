@@ -4,43 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Calculadora de Gorjetas</title>
   </head>
   <body>
-    <div>
+    <div id="container-principal">
       <div>
-        <h1>Calculadora de Gorjetas</h1>
+        <h1 id="nome-calculadora">Calculadora de Gorjetas</h1>
       </div>
       <form>
-        <div>
-          <label for="valorDaConta">
-            <p>Valor Total da Conta</p>
+        <div id="form-parte-um">
+          <label for="valor-conta">
+            <p class="descricoes">Valor Total da Conta</p>
           </label>
-          <p>
-            R$ <input type="number" name="valorDaConta" id="valorDaConta" />
+          <p class="alinhamento-label-input">
+            R$&nbsp
+            <input
+              type="number"
+              name="valor-conta"
+              id="valor-conta"
+              class="inputs-formulario"
+            />
           </p>
         </div>
-        <div>
-          <label for="avaliacaoDoServico">
-            <p>Avaliação do Serviço</p>
+        <hr size="1" width="85%" class="linha-separador" />
+        <div id="form-parte-dois">
+          <label for="avaliacao-atendimento">
+            <p class="descricoes">Avaliação do Atendimento</p>
           </label>
           <p>
-            <select name="avaliacaoDoServico" id="avaliacaoDoServico">
+            <select name="avaliacao-atendimento" id="avaliacao-atendimento">
               <option disable select value="0">--- Escolha uma opção</option>
-              <option value="0.2">20% - Serviço Excelente</option>
-              <option value="0.15">15% - Serviço Muito bom</option>
-              <option value="0.1">10% - Serviço Bom</option>
-              <option value="0.05">5% - Serviço Razoável</option>
+              <option value="0.2">20% (Serviço Excelente)</option>
+              <option value="0.15">15% (Serviço Muito bom)</option>
+              <option value="0.1">10% (Serviço Bom)</option>
+              <option value="0.05">5% (Serviço Razoável)</option>
             </select>
           </p>
         </div>
-        <div>
-          <label for="divisaoDaConta">
-            <p>Número de pessoas que dividirão a conta</p>
+        <hr size="1" width="85%" class="linha-separador" />
+        <div id="form-parte-tres">
+          <label for="divisao-conta">
+            <p class="descricoes">Número de pessoas que dividirão a conta</p>
           </label>
-          <p>
-            <input type="number" name="divisaoDaConta" id="divisaoDaConta" />
-            Pessoa(s)
+          <p class="alinhamento-label-input">
+            <input
+              type="number"
+              name="divisao-conta"
+              id="divisao-conta"
+              class="inputs-formulario"
+            />
+            &nbspPessoa(s)
           </p>
         </div>
       </form>
