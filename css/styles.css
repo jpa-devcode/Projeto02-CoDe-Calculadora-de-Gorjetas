@@ -13,11 +13,11 @@ body {
 }
 
 #container-principal {
-  height: 650px;
+  height: 610px;
   max-width: 500px;
   margin: 100px auto;
   background-color: #e4dfdf;
-  /* box-shadow: 0 0 10px #fff; */
+  box-shadow: 0 0 30px #000;
   border-radius: 20px;
 }
 
@@ -37,8 +37,6 @@ body {
   margin-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 #form-parte-dois {
@@ -55,17 +53,13 @@ body {
 }
 
 .inputs-formulario {
-  width: 70px;
+  width: 80px;
   height: 25px;
   padding: 5px, 5px 5px 8px;
   border-color: #fff;
   border-radius: 5px;
+  font-size: 15px;
 }
-/* 
-.inputs-formulario:focus {
-  outline: none;
-  border: 3px solid red;
-} */
 
 .linha-separador {
   margin-left: 30px;
@@ -75,6 +69,7 @@ body {
   height: 34px;
   border-radius: 5px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .descricoes {
@@ -84,4 +79,22 @@ body {
 .alinhamento-label-input {
   display: flex;
   align-items: center;
+}
+
+.botao-calcular {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.botao-calcular:hover {
+  background-color: var(--cor-primaria);
+  color: #fff;
 }
