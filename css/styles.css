@@ -12,8 +12,8 @@ body {
   font-family: Encode, sans-serif;
 }
 
-#container-principal {
-  height: 610px;
+#containerPrincipal {
+  height: 750px;
   max-width: 500px;
   margin: 100px auto;
   background-color: #e4dfdf;
@@ -21,7 +21,7 @@ body {
   border-radius: 20px;
 }
 
-#nome-calculadora {
+#nomeCalculadora {
   color: var(--cor-terciaria);
   font-size: 27px;
   text-transform: uppercase;
@@ -32,27 +32,27 @@ body {
   border-top-right-radius: 20px;
 }
 
-#form-parte-um {
+#formParteUm {
   margin-top: 50px;
   margin-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-#form-parte-dois {
+#formParteDois {
   margin-top: 30px;
   margin-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-#form-parte-tres {
+#formParteTres {
   margin-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.inputs-formulario {
+.inputsFormulario {
   width: 80px;
   height: 25px;
   padding: 5px, 5px 5px 8px;
@@ -61,11 +61,11 @@ body {
   font-size: 15px;
 }
 
-.linha-separador {
+.linhaSeparador {
   margin-left: 30px;
 }
 
-#avaliacao-atendimento {
+#avaliacaoAtendimento {
   height: 34px;
   border-radius: 5px;
   font-size: 15px;
@@ -76,12 +76,12 @@ body {
   font-weight: bold;
 }
 
-.alinhamento-label-input {
+.alinhamentoLabelInput {
   display: flex;
   align-items: center;
 }
 
-.botao-calcular {
+.botaoCalcular {
   font-size: 17px;
   text-transform: uppercase;
   font-weight: bold;
@@ -90,11 +90,25 @@ body {
   height: 40px;
   width: 150px;
   border-radius: 20px;
-  margin-top: 60px;
+  margin-top: 30px;
   cursor: pointer;
 }
 
-.botao-calcular:hover {
-  background-color: var(--cor-primaria);
+.botaoCalcular:hover {
+  background-color: #000;
   color: #fff;
+}
+
+#valorGorjetaPorPessoa {
+  font-size: 20px;
+  font-weight: none;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#valorGorjetaTotal {
+  font-size: 33px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
 }

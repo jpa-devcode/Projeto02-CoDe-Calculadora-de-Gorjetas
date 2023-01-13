@@ -8,32 +8,32 @@
     <title>Calculadora de Gorjetas</title>
   </head>
   <body>
-    <div id="container-principal">
+    <div id="containerPrincipal">
       <div>
-        <h1 id="nome-calculadora">Calculadora de Gorjetas</h1>
+        <h1 id="nomeCalculadora">Calculadora de Gorjetas</h1>
       </div>
       <form>
-        <div id="form-parte-um">
-          <label for="valor-conta">
+        <div id="formParteUm">
+          <label for="valorConta">
             <p class="descricoes">Valor Total da Conta</p>
           </label>
-          <p class="alinhamento-label-input">
+          <p class="alinhamentoLabelInput">
             R$&nbsp
             <input
               type="number"
-              name="valor-conta"
-              id="valor-conta"
-              class="inputs-formulario"
+              name="valorConta"
+              id="valorConta"
+              class="inputsFormulario"
             />
           </p>
         </div>
-        <hr size="1" width="85%" class="linha-separador" />
-        <div id="form-parte-dois">
-          <label for="avaliacao-atendimento">
+        <hr size="1" width="85%" class="linhaSeparador" />
+        <div id="formParteDois">
+          <label for="avaliacaoAtendimento">
             <p class="descricoes">Avaliação do Atendimento</p>
           </label>
           <p>
-            <select name="avaliacao-atendimento" id="avaliacao-atendimento">
+            <select name="avaliacaoAtendimento" id="avaliacaoAtendimento">
               <option disable select value="0">--- Escolha uma opção</option>
               <option value="0.2">20% (Serviço Excelente)</option>
               <option value="0.15">15% (Serviço Muito bom)</option>
@@ -42,23 +42,32 @@
             </select>
           </p>
         </div>
-        <hr size="1" width="85%" class="linha-separador" />
-        <div id="form-parte-tres">
-          <label for="divisao-conta">
+        <hr size="1" width="85%" class="linhaSeparador" />
+        <div id="formParteTres">
+          <label for="divisaoConta">
             <p class="descricoes">Número de pessoas que dividirão a conta</p>
           </label>
-          <p class="alinhamento-label-input">
+          <p class="alinhamentoLabelInput">
             <input
               type="number"
-              name="divisao-conta"
-              id="divisao-conta"
-              class="inputs-formulario"
+              name="divisaoConta"
+              id="divisaoConta"
+              class="inputsFormulario"
             />
             &nbspPessoa(s)
           </p>
         </div>
-        <button type="submit" class="botao-calcular">Calcular</button>
+        <button type="submit" class="botaoCalcular">Calcular</button>
       </form>
+      <hr size="1" width="85%" class="linhaSeparador" />
+      <hr size="1" width="85%" class="linhaSeparador" />
+      <div id="valorGorjetaPorPessoa">
+        Gorjeta por Pessoa &rarr; R$ <span id="valorPorPessoa"></span>
+      </div>
+      <div id="valorGorjetaTotal">
+        Gorjeta Total &rarr; R$ <span id="valorTotal"></span>
+      </div>
     </div>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
