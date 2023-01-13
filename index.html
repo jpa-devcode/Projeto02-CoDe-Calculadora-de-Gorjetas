@@ -12,28 +12,28 @@
       <div>
         <h1 id="nomeCalculadora">Calculadora de Gorjetas</h1>
       </div>
-      <form>
+      <form id="formulario">
         <div id="formParteUm">
-          <label for="valorConta">
+          <label for="valorDaConta">
             <p class="descricoes">Valor Total da Conta</p>
           </label>
           <p class="alinhamentoLabelInput">
             R$&nbsp
             <input
               type="number"
-              name="valorConta"
-              id="valorConta"
+              name="valorDaConta"
+              id="valorDaConta"
               class="inputsFormulario"
             />
           </p>
         </div>
         <hr size="1" width="85%" class="linhaSeparador" />
         <div id="formParteDois">
-          <label for="avaliacaoAtendimento">
+          <label for="avaliacaoDoAtendimento">
             <p class="descricoes">Avaliação do Atendimento</p>
           </label>
           <p>
-            <select name="avaliacaoAtendimento" id="avaliacaoAtendimento">
+            <select name="avaliacaoDoAtendimento" id="avaliacaoDoAtendimento">
               <option disable select value="0">--- Escolha uma opção</option>
               <option value="0.2">20% (Serviço Excelente)</option>
               <option value="0.15">15% (Serviço Muito bom)</option>
@@ -44,14 +44,14 @@
         </div>
         <hr size="1" width="85%" class="linhaSeparador" />
         <div id="formParteTres">
-          <label for="divisaoConta">
+          <label for="qtdeDePessoas">
             <p class="descricoes">Número de pessoas que dividirão a conta</p>
           </label>
           <p class="alinhamentoLabelInput">
             <input
               type="number"
-              name="divisaoConta"
-              id="divisaoConta"
+              name="qtdeDePessoas"
+              id="qtdeDePessoas"
               class="inputsFormulario"
             />
             &nbspPessoa(s)
