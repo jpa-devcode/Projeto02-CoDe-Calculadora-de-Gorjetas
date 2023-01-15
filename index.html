@@ -20,10 +20,11 @@
           <p class="alinhamentoLabelInput">
             R$&nbsp
             <input
-              type="number"
+              type="text"
               name="valorDaConta"
               id="valorDaConta"
               class="inputsFormulario"
+              onKeyUp="mascaraMoeda(this, event)"
             />
           </p>
         </div>
