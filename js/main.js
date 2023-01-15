@@ -6,11 +6,16 @@ function calcularGorjeta(event) {
     'avaliacaoDoAtendimento'
   ).value;
   let qtdeDePessoas = document.getElementById('qtdeDePessoas').value;
-  let gorjetaPorPessoa = (
-    (valorDaConta * avaliacaoDoAtendimento) /
-    qtdeDePessoas
-  ).toFixed(2);
-  let gorjetaTotal = (valorDaConta * avaliacaoDoAtendimento).toFixed(2);
+  let gorjetaPorPessoa = Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  }).format(
+    ((valorDaConta * avaliacaoDoAtendimento) / qtdeDePessoas).toFixed(2)
+  );
+  let gorjetaTotal = Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  }).format((valorDaConta * avaliacaoDoAtendimento).toFixed(2));
 
   if (
     (valorDaConta == '') |
