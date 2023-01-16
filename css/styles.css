@@ -52,8 +52,17 @@ body {
   padding-right: 30px;
 }
 
-.inputsFormulario {
+.inputFormValor {
   width: 80px;
+  height: 25px;
+  padding: 5px, 5px 5px 8px;
+  border-color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.inputFormQtdePessoas {
+  width: 40px;
   height: 25px;
   padding: 5px, 5px 5px 8px;
   border-color: #fff;
@@ -81,20 +90,42 @@ body {
   align-items: center;
 }
 
-.botaoCalcular {
+.botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#botaoDeCalcular {
   font-size: 17px;
   text-transform: uppercase;
   font-weight: bold;
-  display: block;
-  margin: 30px auto;
   height: 40px;
   width: 150px;
   border-radius: 20px;
-  margin-top: 30px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
-.botaoCalcular:hover {
+#botaoDeCalcular:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#botaoDeLimpar {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#botaoDeLimpar:hover {
   background-color: #000;
   color: #fff;
 }

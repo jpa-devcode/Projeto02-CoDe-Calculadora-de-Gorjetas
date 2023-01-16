@@ -72,5 +72,14 @@ document.getElementById('valorGorjetaPorPessoa').style.display = 'none';
 document.getElementById('valorGorjetaTotal').style.display = 'none';
 
 document
-  .getElementById('formulario')
-  .addEventListener('submit', calcularGorjeta);
+  .getElementById('botaoDeCalcular')
+  .addEventListener('click', calcularGorjeta);
+
+document
+  .getElementById('botaoDeLimpar')
+  .addEventListener('click', limparCampos);
+
+function limparCampos() {
+  document.getElementById('valorDaConta').value = '';
+  document.getElementById('qtdeDePessoas').value = '';
+}

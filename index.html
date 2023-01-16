@@ -23,7 +23,7 @@
               type="text"
               name="valorDaConta"
               id="valorDaConta"
-              class="inputsFormulario"
+              class="inputFormValor"
               onKeyUp="mascaraMoeda(this, event)"
             />
           </p>
@@ -53,12 +53,15 @@
               type="number"
               name="qtdeDePessoas"
               id="qtdeDePessoas"
-              class="inputsFormulario"
+              class="inputFormQtdePessoas"
             />
             &nbsppessoa(s)
           </p>
         </div>
-        <button type="submit" class="botaoCalcular">Calcular</button>
+        <div class="botoes">
+          <button id="botaoDeCalcular" class="botaoCalcular">Calcular</button>
+          <button id="botaoDeLimpar" class="botaoLimpar">Limpar</button>
+        </div>
       </form>
       <hr size="1" width="85%" class="linhaSeparador" />
       <hr size="1" width="85%" class="linhaSeparador" />
